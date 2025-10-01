@@ -51,5 +51,5 @@ class Persistence {
 Presentation --> BusinessLogic : Facade
 BusinessLogic --> Persistence : Database Operations
 ```
-![HBnB High-Level Package Diagram](/HighLevelPackageDiagram.png)
+![HBnB High-Level Package Diagram](resources/HighLevelPackageDiagram.png)
 
