@@ -24,7 +24,7 @@ The application is structured into three primary layers, each with defined respo
 - The Business Logic Layer communicates with this layer only via the **Facade**.
 
 ## **Package Diagram (Mermaid.js)**
-classDiagram
+```classDiagram
 class Presentation {
     +UserService
     +PlaceService
@@ -49,4 +49,4 @@ class Persistence {
 }
 
 Presentation --> BusinessLogic : Facade
-BusinessLogic --> Persistence : Database Operations
+BusinessLogic --> Persistence : Database Operations```
