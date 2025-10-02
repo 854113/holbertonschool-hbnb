@@ -24,32 +24,5 @@ The application is structured into three primary layers, each with defined respo
 - The Business Logic Layer communicates with this layer only via the **Facade**.
 
 ## **Package Diagram (Mermaid.js)**
-```classDiagram
-class Presentation {
-    +UserService
-    +PlaceService
-    +ReviewService
-    +AmenityService
-}
-
-class BusinessLogic {
-    +Facade
-    +User
-    +Place
-    +Review
-    +Amenity
-}
-
-class Persistence {
-    +UserRepository
-    +PlaceRepository
-    +ReviewRepository
-    +AmenityRepository
-    +Database
-}
-
-Presentation --> BusinessLogic : Facade
-BusinessLogic --> Persistence : Database Operations
-```
 ![HBnB High-Level Package Diagram](resources/HighLevelPackageDiagram.png)
 
